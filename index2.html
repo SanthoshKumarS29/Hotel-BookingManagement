@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/92547711d6.js" crossorigin="anonymous"></script>
+    <script src="./Javascript/script2.js" defer></script>
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <div class="menu_bar">
+          <h1 class="logo">Sona.</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index1.html">Rooms</a></li>
+            <li><a href="index2.html">About Us</a></li>
+            <li><a href="index4.html">News</a></li>
+            <li><a href="#">Pages</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="index3.html">Family Rooms</a></li>
+                  <li><a href="index3.html">Premium Rooms</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="index5.html">Contact</a></li>
+          </ul>
+          <button onclick="menu()"><i class="fa-solid fa-bars"></i></button> 
+        </div>
+        <div class="secondmenu" id="secondnav">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index1.html">Rooms</a></li>
+            <li><a href="index2.html">About Us</a></li>
+            <li><a href="index4.html">News</a></li>
+            <li>
+              <div class="dro">
+              <button onclick="myFunction()" class="dropbtn">Pages</button>
+              <div id="myDropdown" class="dropdown-content" >
+                <ul>
+                  <li><a href="/index3.html">Family Rooms</a></li>
+                  <li><a href="/index3.html">Premium Rooms</a></li>
+                </ul>
+              </div>
+              </div>
+            </li>
+            <li><a href="index5.html">Contact</a></li>
+          </ol>
+        </div>
+      </header>
+      <section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+      </section>
+      <section>
+        <div class="aboutcontent">
+            <div class="abouthead">
+                <h3>About Us</h3>
+                <p>Home <span><i class="fa-solid fa-greater-than"></i>About Us</span></p>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div class="aboutbody">
+          <div class="ab1">
+            <h2>Welcome To Sona.</h2>
+            <p>Built in 1910 during the Belle Epoque period, this hotel is located in the center of Paris, with easy access to the city’s tourist attractions. It offers tastefully decorated rooms.</p>
+          </div>
+          <div class="ab2">
+            <p><i class="fa-solid fa-check"></i> 20% Off On Accommodation.</p>
+            <p><i class="fa-solid fa-check"></i> Complimentary Daily Breakfast</p>
+            <p><i class="fa-solid fa-check"></i> 3 Pcs Laundry Per Day</p>
+            <p><i class="fa-solid fa-check"></i> Free Wifi.</p>
+            <p><i class="fa-solid fa-check"></i> Discount 20% On F&B</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="imagesection">
+          <div class="imcont">
+            <div class="images1">
+              <img src="./assets/about-p1.jpg" alt="" class="im">
+              <div class="image1cont">
+                <p>Restaurants Service</p>
+              </div>
+            </div>
+            <div class="images1">
+              <img src="./assets/about-p2.jpg" alt="" class="im">
+              <div class="image1cont">
+                <p>Travel & Camping</p>
+              </div>
+            </div>
+            <div class="images2">
+              <img src="./assets/about-p3.jpg" alt="" class="im">
+              <div class="image2cont">
+                <p>Event & Party</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+          <div class="videocont">
+            <img src="./assets/about-p1.jpg" class="video">
+            <div class="vdcont">
+              <h2>Discover Our Hotel & Services.</h2>
+              <p>It S Hurricane Season But We Are Visiting Hilton Head Island</p>
+              <a href="https://youtu.be/EzKkl64rRbM" type="button"><i class="fa-regular fa-circle-play"></i></a>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="gallery">
+          <div class="galleryhead">
+            <p>OUR GALLERY</p>
+            <h1>Discover Our Works</h1>
+          </div>
+        </div>
+        <div class="gallerybody">
+          <div class="gallerycontainer">
+            <div class="gallery1">
+              <img src="./assets/gallery-1.jpg" alt="" class="g1">
+              <div class="g1cont">
+                <p>Room Luxury</p>
+              </div>
+            </div>
+            <div class="gall2">
+              <div class="gallery2">
+                <img src="./assets/gallery-3.jpg" alt="" class="g2">
+                <div class="g2cont">
+                  <p>Room Luxury</p>
+                </div>
+              </div>
+              <div class="gallery2">
+                <img src="./assets/gallery-4.jpg" alt="" class="g2">
+                <div class="g2cont">
+                  <p>Room Luxury</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery3">
+            <img src="./assets/gallery-2.jpg" alt="" class="g3">
+            <div class="g3cont">
+              <p>Room Luxury</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footersection">
+          <div class="footercont1">
+            <h3>Sona<span style="color:#e7a562 "> .</span></h3>
+            <p>We inspire and reach millions of travelers <br>across 90 local websites</p>
+            <div class="footicons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-camera"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div class="footercont2">
+            <h3>CONTACT US</h3>
+            <p>(12) 345 67890</p>
+            <p>info.colorlib@gmail.com</p>
+            <p>856 Cordia Extension Apt. 356, Lake,</p>
+            <p>United State</p>
+          </div>
+          <div class="footercont3">
+            <h3>NEW LATEST</h3>
+            <p>Get the latest updates and offers.</p>
+            <input type="email" value="" placeholder="Email"><a href="#" type="button"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="endsection">
+          <div class="endcont1">
+            <p><a href="#">Contact</a></p>
+            <p><a href="#">Term of Policy</a></p>
+            <p><a href="#">Privacy</a></p>
+            <p><a href="#">Environmental Policy</a></p>
+          </div>
+          <div class="endcont2">
+            <p>Copyright@2024All right reserved</p>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

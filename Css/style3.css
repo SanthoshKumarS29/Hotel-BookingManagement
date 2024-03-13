@@ -1,0 +1,2238 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    /* font-family: sans-serif; */
+}
+body{
+    background-color: #f5f4f4;
+}
+.menu_bar{
+    background-color: white;
+    color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.menu_bar button{
+    display: none;
+}
+.secondmenu{
+    display: none;
+}
+.logo{
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+}
+.menu_bar ul{
+    display: flex;
+    list-style: none;
+}
+.menu_bar ul li{
+    position: relative;
+    padding: 20px 30px;
+}
+.menu_bar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+.menu_bar ul li a:hover{
+    border-bottom: 3px solid #DFA974;
+}
+.dropdown{
+    display: none;
+}
+.menu_bar ul li:hover .dropdown{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 100%;
+    transition: 0,3s;
+    background-color: white;
+    z-index: 999;
+}
+.menu_bar ul li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.menu_bar ul li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+    /* color: #DFA974; */
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #DFA974;
+    color: white;
+    cursor: pointer;
+    padding: 17px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+.romcontent{
+    background-color: white;
+    margin-top: 20px;
+}
+.romhead{
+    text-align: center;
+    padding: 50px;
+    line-height: 50px;
+}
+.romhead h3{
+    font-size: 50px;
+    font-weight: 300;
+}
+.romhead p{
+    font-size: 20px;
+}
+.romhead span{
+    color: #bdb2ce;
+}
+.romhead i{
+    font-size: 13px;
+    padding-left:7px;
+    padding-right: 7px;
+}
+.totalcont{
+    padding: 20px;
+    background-color: white;
+}
+.rombody{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.rombodycont1{
+    width: 770px;
+    padding: 40px 20px;
+}
+.bigimg{
+    width: 770px;
+    height: 440px;
+}
+.rombodycont2{
+    display: flex;
+    gap: 150px;
+    padding: 20px 0px;
+}
+.romcon1 h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+.romcon1 span{
+    font-size: 45px;
+    font-weight: 600;
+    color: #DFA974;
+}
+.romcon1 p{
+    font-size: 20px;
+}
+.romcon2{
+    display: flex;
+    margin-top: 15px;
+}
+.romcon2 i{
+    color: gold;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.romcon2 span{
+    border: 1px solid #DFA974;
+    padding: 15px 30px;
+    font-size: 13px;
+    background-color: #DFA974;
+    font-family: "Lucida Console", monospace;
+    letter-spacing: 1px;
+    color: white;
+}
+.rombodycont3{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.romcon3{
+    color: #bdb2ce;
+    font-weight: 300;
+}
+.rombodycont4{
+    font-size: 20px;
+    color: #bdb2ce;
+}
+.rombodycont4 p{
+    margin-bottom: 30px;
+}
+.rombodycont5 h2{
+    padding: 30px 0px;
+    font-size: 35px;
+    font-weight: 300;
+}
+.romcon5{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.romcon6 h4{
+    font-size: 22px;
+    font-weight: 300;
+    margin: 7px 0px;
+    color: black;
+}
+.romcon6{
+    font-size: 18px;
+    color: #bdb2ce;
+}
+.ava1{
+    border-radius: 50%;
+    padding: 20px;
+    width: 60px;
+}
+.rmcon2{
+    display: flex;
+    padding: 20px;
+    border-left: 1px solid #bdb2ce;
+}
+.rc1 span{
+    color: #DFA974;
+    font-family: "Lucida Console", monospace;
+}
+.rc2{
+    color: gold;
+    display: flex;
+}
+.rombodycont6{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.review form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+.feild{
+    display: flex;
+}
+.review form input{
+    margin-bottom: 20px;
+}
+.review form label{
+    font-size: 23px;
+}
+.review form label i{
+    font-size: 15px;
+    color: gold;
+    margin: 40px 0px;
+}
+.review input[type=text]{
+    padding: 20px 30px;
+    font-size: 15px;
+    margin-right: 20px;
+    width: 295px;
+}
+.review input[type=email]{
+    padding: 20px 30px;
+    font-size: 15px;
+    /* margin-right: 30px; */
+    width: 295px;
+}
+.review textarea{
+    width: 700px;
+    height: 200px;
+    resize: none;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.review input[type=submit]{
+    border: 1px solid #DFA974;
+    padding: 15px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    width: 30%;
+    background-color: #DFA974;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+}
+.formbody form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 0px 20px;
+    width: 100%;
+}
+.formbody form h2{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.Checkin{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+.Checkin label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.Checkin input{
+    padding: 10px 20px;
+    width: 240px;
+}
+.Choice{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+.Choice label{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.Choice select{
+    padding: 10px 20px;
+    width: 280px;
+}
+.Submit{
+    margin: 20px 0px;
+    
+}
+.Submit input[type=button]{
+    padding:15px 20px;
+    width: 100%;
+    background: transparent;
+    border: 3px solid #DFA974;
+    border-radius: 2px;
+    font-weight: bolder;
+    transition: 0.3s;
+    width: 280px;
+}
+.Submit input[type=button]:hover{
+    background-color: #DFA974;
+    color: white;
+    /* border: 1px solid green; */
+}
+.footersection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    background-color:#222736;
+    color: #aaaaaf;
+}
+.footercont1{
+    line-height: 30px;
+    font-size: 19px;
+}
+.footercont1 h3{
+    font-size: 30px;
+    font-family: "Sofia", sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+.footicons i{
+    border: 1px solid #DFA974;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 3px;
+    transition: 0.3s;
+}
+.footicons i:hover{
+    background-color: #DFA974;
+}
+.footercont2{
+    line-height: 30px;
+    font-size: 19px;
+}
+.footercont2 h3{
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    color: #DFA974;
+}
+.footercont3{
+    line-height: 30px;
+    font-size: 19px;
+}
+.footercont3 h3{
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 500px;
+    color: #DFA974;
+}
+.footercont3 input{
+    background-color: #393d4a;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+}
+.footercont3 i{
+    color: white;
+    padding: 10px;
+    border: 1px solid #DFA974;
+    background-color: #DFA974;
+}
+.endsection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #1e2331;
+    padding: 30px 60px 60px 60px;
+}
+.endcont1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 17px;
+}
+.endcont1 a{
+    text-decoration: none;
+    color: #aaaaaf;
+}
+.endcont2{
+    display: flex;
+    flex-wrap: wrap;
+    color: #aaaaaf;
+}
+@media (min-width:320px) and (max-width:480px){
+    .menu_bar {
+        background-color: white;
+        color: black;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+
+    .menu_bar button {
+        display: block;
+        background-color: white;
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .menu_bar button {
+        border: none;
+    }
+
+    .logo {
+        font-size: 40px;
+        font-family: "Sofia", sans-serif;
+    }
+
+    .menu_bar ul {
+        display: none;
+    }
+
+    .secondmenu {
+        z-index: 999;
+        position: absolute;
+        width: 100%;
+    }
+
+    .secondmenu ol li {
+        position: relative;
+        padding: 20px 30px;
+        background-color: white;
+    }
+
+    .secondmenu ol li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 100px;
+        z-index: 1;
+    }
+
+    .dropdown-content li {
+        list-style-type: none;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 0;
+        text-decoration: none;
+        display: block;
+        text-decoration: none;
+    }
+
+    .dropbtn {
+        background-color: white;
+        border: none;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .show {
+        display: block;
+    }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #DFA974;
+        color: white;
+        cursor: pointer;
+        padding: 17px;
+        border-radius: 4px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+    .romcontent{
+        background-color: white;
+        margin-top: 20px;
+    }
+    .romhead{
+        text-align: center;
+        padding: 50px;
+        line-height: 50px;
+    }
+    .romhead h3{
+        font-size: 50px;
+        font-weight: 300;
+    }
+    .romhead p{
+        font-size: 20px;
+    }
+    .romhead span{
+        color: #bdb2ce;
+    }
+    .romhead i{
+        font-size: 13px;
+        padding-left:7px;
+        padding-right: 7px;
+    }
+    .totalcont{
+        padding: 10px;
+        background-color: white;
+    }
+    .rombody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+    .rombodycont1{
+        width: 250px;
+        padding: 40px 20px;
+    }
+    .bigimg{
+        width: 270px;
+        height: 320px;
+    }
+    .rombodycont2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0px;
+    }
+    .romcon1 h1{
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .romcon1 span{
+        font-size: 45px;
+        font-weight: 600;
+        color: #DFA974;
+    }
+    .romcon1 p{
+        font-size: 20px;
+    }
+    .romcon2{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 15px;
+    }
+    .romcon2 i{
+        color: gold;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    .romcon2 span{
+        border: 1px solid #DFA974;
+        padding: 15px 30px;
+        font-size: 13px;
+        background-color: #DFA974;
+        font-family: "Lucida Console", monospace;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .rombodycont3{
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .romcon3{
+        color: #bdb2ce;
+        font-weight: 300;
+    }
+    .rombodycont4{
+        font-size: 20px;
+        color: #bdb2ce;
+    }
+    .rombodycont4 p{
+        margin-bottom: 30px;
+    }
+    .rombodycont5 h2{
+        padding: 30px 0px;
+        font-size: 35px;
+        font-weight: 300;
+    }
+    .romcon5{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .romcon6 h4{
+        font-size: 22px;
+        font-weight: 300;
+        margin: 7px 0px;
+        color: black;
+    }
+    .romcon6{
+        font-size: 18px;
+        color: #bdb2ce;
+    }
+    .ava1{
+        border-radius: 50%;
+        padding: 20px;
+        width: 60px;
+        display: none;
+    }
+    .rmcon2{
+        display: flex;
+        padding: 20px;
+        border-left: 1px solid #bdb2ce;
+    }
+    .rc1 span{
+        color: #DFA974;
+        font-family: "Lucida Console", monospace;
+    }
+    .rc2{
+        color: gold;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rombodycont6{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .review form{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .feild{
+        display: flex;
+        flex-direction: column;
+    }
+    .review form input{
+        margin-bottom: 20px;
+    }
+    .review form label{
+        font-size: 23px;
+    }
+    .review form label i{
+        font-size: 15px;
+        color: gold;
+        margin: 40px 0px;
+    }
+    .review input[type=text]{
+        padding: 20px 30px;
+        font-size: 15px;
+        margin-right: 20px;
+        width: 205px;
+    }
+    .review input[type=email]{
+        padding: 20px 30px;
+        font-size: 15px;
+        /* margin-right: 30px; */
+        width: 205px;
+    }
+    .review textarea{
+        width: 220px;
+        height: 200px;
+        resize: none;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .review input[type=submit]{
+        border: 1px solid #DFA974;
+        padding: 15px 30px;
+        font-size: 13px;
+        font-weight: 700;
+        width: 90%;
+        background-color: #DFA974;
+        letter-spacing: 2px;
+        color: white;
+        text-align: center;
+    }
+    .formbody form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0px 0px;
+        width: 100%;
+    }
+    .formbody form h2{
+        font-size: 40px;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .Checkin{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    .Checkin label{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .Checkin input{
+        padding: 10px 20px;
+        width: 205px;
+    }
+    .Choice{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0px;
+    }
+    .Choice label{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .Choice select{
+        width: 245px;
+        padding: 10px 20px;
+    }
+    .Submit{
+        margin: 20px 0px;
+        
+    }
+    .Submit input[type=button]{
+        padding:15px 20px;
+        width: 100%;
+        background: transparent;
+        border: 3px solid #DFA974;
+        border-radius: 2px;
+        font-weight: bolder;
+        width: 245px;
+        transition: 0.3s;
+    }
+    .Submit input[type=button]:hover{
+        background-color: #DFA974;
+        color: white;
+        /* border: 1px solid green; */
+    }
+    .footersection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #222736;
+        color: #aaaaaf;
+    }
+
+    .footercont1 {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .footercont1 h3 {
+        font-size: 30px;
+        font-family: "Sofia", sans-serif;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .footicons i {
+        border: 1px solid #DFA974;
+        border-radius: 50%;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin: 20px 3px;
+        transition: 0.3s;
+    }
+
+    .footicons i:hover {
+        background-color: #DFA974;
+    }
+
+    .footercont2 {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .footercont2 h3 {
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 500px;
+        color: #DFA974;
+    }
+
+    .footercont3 {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .footercont3 h3 {
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 500px;
+        color: #DFA974;
+    }
+
+    .footercont3 input {
+        background-color: #393d4a;
+        border: none;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .footercont3 i {
+        color: white;
+        padding: 10px;
+        border: 1px solid #DFA974;
+        background-color: #DFA974;
+    }
+
+    .endsection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        background-color: #1e2331;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .endcont1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .endcont1 a {
+        text-decoration: none;
+        color: #aaaaaf;
+    }
+
+    .endcont2 {
+        display: flex;
+        flex-wrap: wrap;
+        color: #aaaaaf;
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+    .menu_bar {
+        background-color: white;
+        color: black;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 25px;
+    }
+
+    .menu_bar button {
+        display: block;
+        background-color: white;
+        font-size: 27px;
+        padding: 2px;
+    }
+
+    .menu_bar button {
+        border: none;
+    }
+
+    .logo {
+        font-size: 45px;
+        font-family: "Sofia", sans-serif;
+    }
+
+    .menu_bar ul {
+        display: none;
+    }
+
+    .secondmenu {
+        z-index: 999;
+        position: absolute;
+        width: 100%;
+    }
+
+    .secondmenu ol li {
+        position: relative;
+        padding: 20px 30px;
+        background-color: white;
+    }
+
+    .secondmenu ol li a {
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 100px;
+        z-index: 1;
+    }
+
+    .dropdown-content li {
+        list-style-type: none;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 0;
+        text-decoration: none;
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .dropbtn {
+        background-color: white;
+        border: none;
+        font-size: 24px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .show {
+        display: block;
+    }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #DFA974;
+        color: white;
+        cursor: pointer;
+        padding: 17px;
+        border-radius: 4px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+    .romcontent{
+        background-color: white;
+        margin-top: 20px;
+    }
+    .romhead{
+        text-align: center;
+        padding: 50px;
+        line-height: 50px;
+    }
+    .romhead h3{
+        font-size: 50px;
+        font-weight: 300;
+    }
+    .romhead p{
+        font-size: 20px;
+    }
+    .romhead span{
+        color: #bdb2ce;
+    }
+    .romhead i{
+        font-size: 13px;
+        padding-left:7px;
+        padding-right: 7px;
+    }
+    .totalcont{
+        padding: 10px;
+        background-color: white;
+    }
+    .rombody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+    .rombodycont1{
+        width: 421px;
+        padding: 40px 20px;
+    }
+    .bigimg{
+        width: 421px;
+        height: 320px;
+    }
+    .rombodycont2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0px;
+    }
+    .romcon1 h1{
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .romcon1 span{
+        font-size: 45px;
+        font-weight: 600;
+        color: #DFA974;
+    }
+    .romcon1 p{
+        font-size: 20px;
+    }
+    .romcon2{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 15px;
+    }
+    .romcon2 i{
+        color: gold;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    .romcon2 span{
+        border: 1px solid #DFA974;
+        padding: 15px 30px;
+        font-size: 13px;
+        background-color: #DFA974;
+        font-family: "Lucida Console", monospace;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .rombodycont3{
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .romcon3{
+        color: #bdb2ce;
+        font-weight: 300;
+    }
+    .rombodycont4{
+        font-size: 20px;
+        color: #bdb2ce;
+    }
+    .rombodycont4 p{
+        margin-bottom: 30px;
+    }
+    .rombodycont5 h2{
+        padding: 30px 0px;
+        font-size: 35px;
+        font-weight: 300;
+    }
+    .romcon5{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .romcon6 h4{
+        font-size: 22px;
+        font-weight: 300;
+        margin: 7px 0px;
+        color: black;
+    }
+    .romcon6{
+        font-size: 18px;
+        color: #bdb2ce;
+    }
+    .ava1{
+        border-radius: 50%;
+        padding: 20px;
+        width: 60px;
+        display: none;
+    }
+    .rmcon2{
+        display: flex;
+        padding: 20px;
+        border-left: 1px solid #bdb2ce;
+    }
+    .rc1 span{
+        color: #DFA974;
+        font-family: "Lucida Console", monospace;
+    }
+    .rc2{
+        color: gold;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rombodycont6{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .review form{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .feild{
+        display: flex;
+        flex-direction: column;
+    }
+    .review form input{
+        margin-bottom: 20px;
+    }
+    .review form label{
+        font-size: 23px;
+    }
+    .review form label i{
+        font-size: 15px;
+        color: gold;
+        margin: 40px 0px;
+    }
+    .review input[type=text]{
+        padding: 20px 30px;
+        font-size: 15px;
+        margin-right: 20px;
+        width: 305px;
+    }
+    .review input[type=email]{
+        padding: 20px 30px;
+        font-size: 15px;
+        /* margin-right: 30px; */
+        width: 305px;
+    }
+    .review textarea{
+        width: 325px;
+        height: 200px;
+        resize: none;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .review input[type=submit]{
+        border: 1px solid #DFA974;
+        padding: 15px 30px;
+        font-size: 13px;
+        font-weight: 700;
+        width: 50%;
+        background-color: #DFA974;
+        letter-spacing: 2px;
+        color: white;
+        text-align: center;
+    }
+    .formbody form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0px 0px;
+        width: 100%;
+    }
+    .formbody form h2{
+        font-size: 40px;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .Checkin{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    .Checkin label{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .Checkin input{
+        padding: 10px 20px;
+        width: 305px;
+    }
+    .Choice{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0px;
+    }
+    .Choice label{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .Choice select{
+        width: 345px;
+        padding: 10px 20px;
+    }
+    .Submit{
+        margin: 20px 0px;
+        
+    }
+    .Submit input[type=button]{
+        padding:15px 20px;
+        background: transparent;
+        border: 3px solid #DFA974;
+        border-radius: 2px;
+        font-weight: bolder;
+        width: 345px;
+        transition: 0.3s;
+    }
+    .Submit input[type=button]:hover{
+        background-color: #DFA974;
+        color: white;
+        /* border: 1px solid green; */
+    }
+    .footersection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #222736;
+        color: #aaaaaf;
+    }
+
+    .footercont1 {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .footercont1 h3 {
+        font-size: 30px;
+        font-family: "Sofia", sans-serif;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .footicons i {
+        border: 1px solid #DFA974;
+        border-radius: 50%;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin: 20px 3px;
+        transition: 0.3s;
+    }
+
+    .footicons i:hover {
+        background-color: #DFA974;
+    }
+
+    .footercont2 {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .footercont2 h3 {
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 500px;
+        color: #DFA974;
+    }
+
+    .footercont3 {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .footercont3 h3 {
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 500px;
+        color: #DFA974;
+    }
+
+    .footercont3 input {
+        background-color: #393d4a;
+        border: none;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .footercont3 i {
+        color: white;
+        padding: 10px;
+        border: 1px solid #DFA974;
+        background-color: #DFA974;
+    }
+
+    .endsection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        background-color: #1e2331;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .endcont1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .endcont1 a {
+        text-decoration: none;
+        color: #aaaaaf;
+    }
+
+    .endcont2 {
+        display: flex;
+        flex-wrap: wrap;
+        color: #aaaaaf;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    .menu_bar {
+        background-color: white;
+        color: black;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .menu_bar button {
+        display: block;
+        background-color: white;
+        font-size: 35px;
+        padding: 2px;
+    }
+
+    .menu_bar button {
+        border: none;
+    }
+
+    .logo {
+        font-size: 50px;
+        font-family: "Sofia", sans-serif;
+    }
+
+    .menu_bar ul {
+        display: none;
+    }
+
+    .secondmenu {
+        z-index: 999;
+        position: absolute;
+        width: 100%;
+    }
+
+    .secondmenu ol li {
+        position: relative;
+        padding: 20px 30px;
+        background-color: white;
+    }
+
+    .secondmenu ol li a {
+        text-decoration: none;
+        font-size: 34px;
+        color: black;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 100px;
+        z-index: 1;
+    }
+
+    .dropdown-content li {
+        list-style-type: none;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 0;
+        text-decoration: none;
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .dropbtn {
+        background-color: white;
+        border: none;
+        font-size: 34px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .show {
+        display: block;
+    }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #DFA974;
+        color: white;
+        cursor: pointer;
+        padding: 17px;
+        border-radius: 4px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+    .romcontent{
+        background-color: white;
+        margin-top: 20px;
+    }
+    .romhead{
+        text-align: center;
+        padding: 50px;
+        line-height: 50px;
+    }
+    .romhead h3{
+        font-size: 50px;
+        font-weight: 300;
+    }
+    .romhead p{
+        font-size: 20px;
+    }
+    .romhead span{
+        color: #bdb2ce;
+    }
+    .romhead i{
+        font-size: 13px;
+        padding-left:7px;
+        padding-right: 7px;
+    }
+    .totalcont{
+        padding: 10px;
+        background-color: white;
+    }
+    .rombody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+    .rombodycont1{
+        width: 705px;
+        padding: 40px 20px;
+    }
+    .bigimg{
+        width: 705px;
+        height: 380px;
+    }
+    .rombodycont2{
+        display: flex;
+        gap: 80px;
+        padding: 20px 0px;
+    }
+    .romcon1 h1{
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .romcon1 span{
+        font-size: 45px;
+        font-weight: 600;
+        color: #DFA974;
+    }
+    .romcon1 p{
+        font-size: 20px;
+    }
+    .romcon2{
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .romcon2 i{
+        color: gold;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    .romcon2 span{
+        border: 1px solid #DFA974;
+        padding: 15px 30px;
+        font-size: 13px;
+        background-color: #DFA974;
+        font-family: "Lucida Console", monospace;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .rombodycont3{
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .romcon3{
+        color: #bdb2ce;
+        font-weight: 300;
+    }
+    .rombodycont4{
+        font-size: 20px;
+        color: #bdb2ce;
+    }
+    .rombodycont4 p{
+        margin-bottom: 30px;
+    }
+    .rombodycont5 h2{
+        padding: 30px 0px;
+        font-size: 35px;
+        font-weight: 300;
+    }
+    .romcon5{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .romcon6 h4{
+        font-size: 22px;
+        font-weight: 300;
+        margin: 7px 0px;
+        color: black;
+    }
+    .romcon6{
+        font-size: 18px;
+        color: #bdb2ce;
+    }
+    .ava1{
+        border-radius: 50%;
+        padding: 20px;
+        width: 60px;
+        display: none;
+    }
+    .rmcon2{
+        display: flex;
+        padding: 20px;
+        border-left: 1px solid #bdb2ce;
+    }
+    .rc1 span{
+        color: #DFA974;
+        font-family: "Lucida Console", monospace;
+    }
+    .rc2{
+        color: gold;
+        display: flex;
+        gap: 10px;
+    }
+    .rombodycont6{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .review form{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .feild{
+        display: flex;
+    }
+    .review form input{
+        margin-bottom: 20px;
+    }
+    .review form label{
+        font-size: 23px;
+    }
+    .review form label i{
+        font-size: 15px;
+        color: gold;
+        margin: 40px 0px;
+    }
+    .review input[type=text]{
+        padding: 20px 30px;
+        font-size: 15px;
+        margin-right: 20px;
+        width: 275px;
+    }
+    .review input[type=email]{
+        padding: 20px 30px;
+        font-size: 15px;
+        /* margin-right: 30px; */
+        width: 275px;
+    }
+    .review textarea{
+        width: 670px;
+        height: 200px;
+        resize: none;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .review input[type=submit]{
+        border: 1px solid #DFA974;
+        padding: 15px 30px;
+        font-size: 13px;
+        font-weight: 700;
+        width: 30%;
+        background-color: #DFA974;
+        letter-spacing: 2px;
+        color: white;
+        text-align: center;
+    }
+    .formbody form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0px 0px;
+        width: 100%;
+    }
+    .formbody form h2{
+        font-size: 40px;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .Checkin{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    .Checkin label{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .Checkin input{
+        padding: 10px 20px;
+        width: 605px;
+    }
+    .Choice{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0px;
+    }
+    .Choice label{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .Choice select{
+        width: 645px;
+        padding: 10px 20px;
+    }
+    .Submit{
+        margin: 20px 0px;
+        
+    }
+    .Submit input[type=button]{
+        padding:15px 20px;
+        background: transparent;
+        border: 3px solid #DFA974;
+        border-radius: 2px;
+        font-weight: bolder;
+        width: 645px;
+        transition: 0.3s;
+    }
+    .Submit input[type=button]:hover{
+        background-color: #DFA974;
+        color: white;
+        /* border: 1px solid green; */
+    }
+    .footersection {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #222736;
+        color: #aaaaaf;
+    }
+
+    .footercont1 {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .footercont1 h3 {
+        font-size: 30px;
+        font-family: "Sofia", sans-serif;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .footicons i {
+        border: 1px solid #DFA974;
+        border-radius: 50%;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin: 20px 3px;
+        transition: 0.3s;
+    }
+
+    .footicons i:hover {
+        background-color: #DFA974;
+    }
+
+    .footercont2 {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .footercont2 h3 {
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 500px;
+        color: #DFA974;
+    }
+
+    .footercont3 {
+        line-height: 30px;
+        font-size: 19px;
+    }
+
+    .footercont3 h3 {
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 500px;
+        color: #DFA974;
+    }
+
+    .footercont3 input {
+        background-color: #393d4a;
+        border: none;
+        padding: 10px;
+        margin-top: 30px;
+        width: 50%;
+    }
+
+    .footercont3 i {
+        color: white;
+        padding: 10px;
+        border: 1px solid #DFA974;
+        background-color: #DFA974;
+    }
+
+    .endsection {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        background-color: #1e2331;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .endcont1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .endcont1 a {
+        text-decoration: none;
+        color: #aaaaaf;
+    }
+
+    .endcont2 {
+        display: flex;
+        flex-wrap: wrap;
+        color: #aaaaaf;
+    }
+}
+@media (min-width:1025px) and (max-width:1200px){
+    body{
+        background-color: #f5f4f4;
+    }
+    .menu_bar{
+        background-color: white;
+        color: black;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    .menu_bar button{
+        display: none;
+    }
+    .secondmenu{
+        display: none;
+    }
+    .logo{
+        font-size: 40px;
+        font-family: "Sofia", sans-serif;
+    }
+    .menu_bar ul{
+        display: flex;
+        list-style: none;
+    }
+    .menu_bar ul li{
+        position: relative;
+        padding: 20px 30px;
+    }
+    .menu_bar ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        padding-bottom: 5px;
+        transition: 0.3s;
+    }
+    .menu_bar ul li a:hover{
+        border-bottom: 3px solid #DFA974;
+    }
+    .dropdown{
+        display: none;
+    }
+    .menu_bar ul li:hover .dropdown{
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 100%;
+        transition: 0,3s;
+        background-color: white;
+        z-index: 999;
+    }
+    .menu_bar ul li:hover .dropdown ul{
+        display: block;
+        margin: 10px;
+    }
+    .menu_bar ul li:hover .dropdown ul li{
+        width: 150px;
+        padding: 10px;
+        /* color: #DFA974; */
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #DFA974;
+        color: white;
+        cursor: pointer;
+        padding: 17px;
+        border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+        background-color: #555;
+    }
+    .romcontent{
+        background-color: white;
+        margin-top: 20px;
+    }
+    .romhead{
+        text-align: center;
+        padding: 50px;
+        line-height: 50px;
+    }
+    .romhead h3{
+        font-size: 50px;
+        font-weight: 300;
+    }
+    .romhead p{
+        font-size: 20px;
+    }
+    .romhead span{
+        color: #bdb2ce;
+    }
+    .romhead i{
+        font-size: 13px;
+        padding-left:7px;
+        padding-right: 7px;
+    }
+    .totalcont{
+        padding: 20px;
+        background-color: white;
+    }
+    .rombody{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .rombodycont1{
+        width: 570px;
+        padding: 40px 20px;
+    }
+    .bigimg{
+        width: 570px;
+        height: 440px;
+    }
+    .rombodycont2{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 20px 0px;
+    }
+    .romcon1 h1{
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .romcon1 span{
+        font-size: 45px;
+        font-weight: 600;
+        color: #DFA974;
+    }
+    .romcon1 p{
+        font-size: 20px;
+    }
+    .romcon2{
+        display: flex;
+        margin-top: 15px;
+    }
+    .romcon2 i{
+        color: gold;
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    .romcon2 span{
+        border: 1px solid #DFA974;
+        padding: 15px 30px;
+        font-size: 13px;
+        background-color: #DFA974;
+        font-family: "Lucida Console", monospace;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .rombodycont3{
+        display: flex;
+        gap: 40px;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .romcon3{
+        color: #bdb2ce;
+        font-weight: 300;
+    }
+    .rombodycont4{
+        font-size: 20px;
+        color: #bdb2ce;
+    }
+    .rombodycont4 p{
+        margin-bottom: 30px;
+    }
+    .rombodycont5 h2{
+        padding: 30px 0px;
+        font-size: 35px;
+        font-weight: 300;
+    }
+    .romcon5{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .romcon6 h4{
+        font-size: 22px;
+        font-weight: 300;
+        margin: 7px 0px;
+        color: black;
+    }
+    .romcon6{
+        font-size: 18px;
+        color: #bdb2ce;
+    }
+    .ava1{
+        border-radius: 50%;
+        padding: 20px;
+        width: 60px;
+    }
+    .rmcon2{
+        display: flex;
+        padding: 20px;
+        border-left: 1px solid #bdb2ce;
+    }
+    .rc1 span{
+        color: #DFA974;
+        font-family: "Lucida Console", monospace;
+    }
+    .rc2{
+        color: gold;
+        display: flex;
+    }
+    .rombodycont6{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .review form{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .feild{
+        display: flex;
+    }
+    .review form input{
+        margin-bottom: 20px;
+    }
+    .review form label{
+        font-size: 23px;
+    }
+    .review form label i{
+        font-size: 15px;
+        color: gold;
+        margin: 40px 0px;
+    }
+    .review input[type=text]{
+        padding: 20px 30px;
+        font-size: 15px;
+        margin-right: 20px;
+        width: 295px;
+    }
+    .review input[type=email]{
+        padding: 20px 30px;
+        font-size: 15px;
+        /* margin-right: 30px; */
+        width: 295px;
+    }
+    .review textarea{
+        width: 700px;
+        height: 200px;
+        resize: none;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .review input[type=submit]{
+        border: 1px solid #DFA974;
+        padding: 15px 30px;
+        font-size: 13px;
+        font-weight: 700;
+        width: 30%;
+        background-color: #DFA974;
+        letter-spacing: 2px;
+        color: white;
+        text-align: center;
+    }
+    .formbody form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 40px;
+        padding: 0px 20px;
+        width: 100%;
+    }
+    .formbody form h2{
+        font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .Checkin{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    .Checkin label{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .Checkin input{
+        padding: 10px 20px;
+        width: 240px;
+    }
+    .Choice{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0px;
+    }
+    .Choice label{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .Choice select{
+        padding: 10px 20px;
+        width: 280px;
+    }
+    .Submit{
+        margin: 20px 0px;
+        
+    }
+    .Submit input[type=button]{
+        padding:15px 20px;
+        width: 100%;
+        background: transparent;
+        border: 3px solid #DFA974;
+        border-radius: 2px;
+        font-weight: bolder;
+        transition: 0.3s;
+        width: 280px;
+    }
+    .Submit input[type=button]:hover{
+        background-color: #DFA974;
+        color: white;
+        /* border: 1px solid green; */
+    }
+    .footersection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 60px;
+        background-color:#222736;
+        color: #aaaaaf;
+    }
+    .footercont1{
+        line-height: 30px;
+        font-size: 19px;
+    }
+    .footercont1 h3{
+        font-size: 30px;
+        font-family: "Sofia", sans-serif;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .footicons i{
+        border: 1px solid #DFA974;
+        border-radius: 50%;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin: 20px 3px;
+        transition: 0.3s;
+    }
+    .footicons i:hover{
+        background-color: #DFA974;
+    }
+    .footercont2{
+        line-height: 30px;
+        font-size: 19px;
+    }
+    .footercont2 h3{
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 500px;
+        color: #DFA974;
+    }
+    .footercont3{
+        line-height: 30px;
+        font-size: 19px;
+    }
+    .footercont3 h3{
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 500px;
+        color: #DFA974;
+    }
+    .footercont3 input{
+        background-color: #393d4a;
+        border: none;
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .footercont3 i{
+        color: white;
+        padding: 10px;
+        border: 1px solid #DFA974;
+        background-color: #DFA974;
+    }
+    .endsection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #1e2331;
+        padding: 30px 60px 60px 60px;
+    }
+    .endcont1{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 17px;
+    }
+    .endcont1 a{
+        text-decoration: none;
+        color: #aaaaaf;
+    }
+    .endcont2{
+        display: flex;
+        flex-wrap: wrap;
+        color: #aaaaaf;
+    }
+}
