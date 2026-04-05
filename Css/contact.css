@@ -1,0 +1,90 @@
+.contact-parent-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5rem 0;
+    gap: 1.4rem;
+}
+
+.contact-child-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.contact-head-txt {
+    font-size: 2.75rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.contact-body-txt {
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.005rem;
+}
+
+.ccc-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+.ccc-info p:nth-child(odd) {
+    color: var(--gray-clr-2);
+}
+
+.cf-feild-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.msg-feild {
+    grid-column: span 2;
+}
+
+.feild input,
+.msg-feild textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--gray-clr-2);
+    border-radius: .3rem;
+    font-size: 1.02rem;
+}
+
+.contact-btn {
+    background-color: var(--theme-clr);
+    padding: .75rem 1rem;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    border-radius: .4rem;
+    border: 1px solid var(--theme-clr);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.map {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-parent-container {
+        grid-template-columns: 1fr;
+        padding: 3rem 0;
+    }
+
+    .cf-feild-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .msg-feild {
+        grid-column: span 1;
+    }
+}

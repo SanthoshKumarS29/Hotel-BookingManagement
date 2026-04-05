@@ -4,426 +4,605 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  <script src="./Javascript/script.js" defer></script>
+  <title>Hotel Booking | Template</title>
+  <link rel="stylesheet" href="./Css/common.css">
+  <link rel="stylesheet" href="./Css/home.css">
   <script src="https://kit.fontawesome.com/92547711d6.js" crossorigin="anonymous"></script>
-  <title>HOTEL</title>
+  <script src="./Javascript/common.js" defer></script>
+  <script src="./Javascript/form.js" defer></script>
 </head>
 
 <body>
   <header>
-    <div class="menu_bar">
-      <h1 class="logo">Sonaa.</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index1.html">Rooms</a></li>
-        <li><a href="index2.html">About Us</a></li>
-        <li><a href="index4.html">News</a></li>
-        <li><a href="#">Pages</a>
-          <div class="dropdown">
-            <ul>
-              <li><a href="index3.html">Family Rooms</a></li>
-              <li><a href="index3.html">Premium Rooms</a></li>
-            </ul>
+    <div class="upper-cta-border-bottom">
+      <div class="container">
+        <div class="upper-cta-container">
+          <div class="ucc-call">
+            <span class="phone-icon"><i class="fa-solid fa-phone"></i></span>
+            <p>(12) 345 67890</p>
           </div>
-        </li>
-        <li><a href="index5.html">Contact</a></li>
-      </ul>
-      <button onclick="menu()"><i class="fa-solid fa-bars"></i></button>
-    </div>
-      <div class="secondmenu" id="secondnav">
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index1.html">Rooms</a></li>
-          <li><a href="index2.html">About Us</a></li>
-          <li><a href="index4.html">News</a></li>
-          <li>
-            <div class="dro">
-            <button onclick="myFunction()" class="dropbtn">Pages</button>
-            <div id="myDropdown" class="dropdown-content" >
-              <ul>
-                <li><a href="index3.html">Family Rooms</a></li>
-                <li><a href="index3.html">Premium Rooms</a></li>
-              </ul>
+          <div class="ucc-social">
+            <div class="uccs-mail">
+              <span class="mail-icon"><i class="fa-solid fa-envelope"></i></span>
+              <p>info.colorlib@gmail.com</p>
             </div>
+            <div class="uccs-social-links">
+              <a href="/Hotel-BookingManagement/index.html" class="uccs-sl-icons"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="/Hotel-BookingManagement/index.html" class="uccs-sl-icons"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="/Hotel-BookingManagement/index.html" class="uccs-sl-icons"><i class="fa-brands fa-square-instagram"></i></a>
             </div>
-          </li>
-          <li><a href="index5.html">Contact</a></li>
-        </ol>
+          </div>
+          <div>
+            <a href="/" class="ucc-booking-btn">Booking Now</a>
+          </div>
+        </div>
       </div>
+    </div>
   </header>
-  <section>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-  </section>
-  <section>
-    <div class="headcont">
-      <div class="backgroudimage rotate">
-        <img src="./assets/hero1.jpg" alt="">
-        <div class="text">
-          <div class="cont1">
-            <div class="subcont1">
-              <h1>Sona A Luxury Hotel</h1>
-              <p>Here are the best hotel booking sites, including recommendations for international travel and for
-                finding
-                low-priced hotel rooms.</p>
-              <a href="#" type="button" class="firstbutton">Discover More</a>
-              <a href="#" type="button" class="secondbutton">Booking Now</a>
-            </div>
-          </div>
+  <nav class="header-bg-sticky">
+    <!-- lap nav bar -->
+    <div class="container">
+      <div class="header-container">
+        <div>
+          <a href="/Hotel-BookingManagement/index.html" class="hc-company-txt">Sona</a>
         </div>
-      </div>
-      <div class="backgroudimage">
-        <img src="./assets/hero-2.jpg" alt="">
-        <div class="text">
-          <div class="cont1">
-            <div class="subcont1">
-              <h1>Sona A Luxury Hotel</h1>
-              <p>Here are the best hotel booking sites, including recommendations for international travel and for
-                finding
-                low-priced hotel rooms.</p>
-              <a href="#" type="button" class="firstbutton">Discover More</a>
-              <a href="#" type="button" class="secondbutton">Booking Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="backgroudimage">
-        <img src="./assets/hero-1.jpg" alt="">
-        <div class="text">
-          <div class="cont1">
-            <div class="subcont1">
-              <h1>Sona A Luxury Hotel</h1>
-              <p>Here are the best hotel booking sites, including recommendations for international travel and for
-                finding
-                low-priced hotel rooms.</p>
-              <a href="#" type="button" class="firstbutton">Discover More</a>
-              <a href="#" type="button" class="secondbutton">Booking Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="aboutcont">
-      <div class="cont3">
-        <div class="subcont3">
-          <p style="color: #e7a562;">About Us</p>
-          <h3>Intercontinental LA <br>Westlake Hotel</h3>
-          <p>Sona.com is a leading online accommodation site. We’re passionate about travel. Every day, we inspire and
-            reach millions of travelers across 90 local websites in 41 languages.</p>
-          <p>So when it comes to booking the perfect hotel, vacation rental, resort, apartment, guest house, or tree
-            house, we’ve got you covered.</p>
-          <a href="#" type="button">Read More</a>
-        </div>
-      </div>
-      <div class="cont4">
-        <div class="subcont4">
-          <img src="./assets/about-1.jpg" alt="">
-          <img src="./assets/about-2.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="servicecont">
-      <div class="cont5">
-        <div class="subcont5">
-          <p>What we Do<br><span>Discover Our Service</span></p>
-        </div>
-      </div>
-      <div class="cont6">
-        <div class="sercont1">
-          <div class="srow1">
-            <i class="fa-solid fa-location-dot"></i><br>
-            <b>Travel Plan</b>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,</p>
-          </div>
-          <div class="srow1">
-            <i class="fa-solid fa-bowl-food"></i><br>
-            <b>Catring</b>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,</p>
-          </div>
-          <div class="srow1">
-            <i class="fa-solid fa-bed"></i><br>
-            <b>Babysitting</b>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,</p>
-          </div>
-          <div class="srow1">
-            <i class="fa-brands fa-cotton-bureau"></i><br>
-            <b>Laundry</b>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,</p>
-          </div>
-          <div class="srow1">
-            <i class="fa-solid fa-car"></i><br>
-            <b>Hire Driver</b>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,</p>
-          </div>
-          <div class="srow1">
-            <i class="fa-solid fa-martini-glass-citrus"></i><br>
-            <b>Bar & Drink</b>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="totalroomdetail">
-      <div class="main-container">
-        <img src="./assets/room-b1.jpg" alt="" class="image">
-        <div class="overlay">
-          <h1>Double Room</h1>
-          <p><span>199$</span>/Pernight</p>
-          <div class="roomdetails">
-            <div class="rode1">
-              <p>Size:</p>
-              <p>Capacity:</p>
-              <p>Beds:</p>
-              <p>Service:</p>
-            </div>
-            <div class="rode2">
-              <p>30Ft</p>
-              <p>Max Person 5</p>
-              <p>Kings Beds</p>
-              <p>Wifi,Teleivision <br>Bathroom</p>
-            </div>
-          </div>
-          <a href="#" type="button">More Details</a>
-        </div>
-      </div>
-      <div class="main-container">
-        <img src="./assets/room-b2.jpg" alt="" class="image">
-        <div class="overlay">
-          <h1>Premium Room</h1>
-          <p><span>159$</span>/Pernight</p>
-          <div class="roomdetails">
-            <div class="rode1">
-              <p>Size:</p>
-              <p>Capacity:</p>
-              <p>Beds:</p>
-              <p>Service:</p>
-            </div>
-            <div class="rode2">
-              <p>50Ft</p>
-              <p>Max Person 7</p>
-              <p>Queen Beds</p>
-              <p>Wifi,Teleivision<br>Bathroom</p>
-            </div>
-          </div>
-          <a href="#" type="button">More Details</a>
-        </div>
-      </div>
-      <div class="main-container">
-        <img src="./assets/room-b3.jpg" alt="" class="image">
-        <div class="overlay">
-          <h1>Deluxe Room</h1>
-          <p><span>198$</span>/Pernight</p>
-          <div class="roomdetails">
-            <div class="rode1">
-              <p>Size:</p>
-              <p>Capacity:</p>
-              <p>Beds:</p>
-              <p>Service:</p>
-            </div>
-            <div class="rode2">
-              <p>40Ft</p>
-              <p>Max Person 2</p>
-              <p>Low Poster Bed</p>
-              <p>Gourmet minibar<br>Wifi</p>
-            </div>
-          </div>
-          <a href="#" type="button">More Details</a>
-        </div>
-      </div>
-      <div class="main-container">
-        <img src="./assets/room-b4.jpg" alt="" class="image">
-        <div class="overlay">
-          <h1>Family Room</h1>
-          <p><span>299$</span>/Pernight</p>
-          <div class="roomdetails">
-            <div class="rode1">
-              <p>Size:</p>
-              <p>Capacity:</p>
-              <p>Beds:</p>
-              <p>Service:</p>
-            </div>
-            <div class="rode2">
-              <p>60Ft</p>
-              <p>Max Person 5</p>
-              <p>Full Beds</p>
-              <p>Wifi,Teleivision<br>Bathroom</p>
-            </div>
-          </div>
-          <a href="#" type="button">More Details</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="commentsection">
-      <button onclick="slide('prev')" type="button"><i class="fa-solid fa-arrow-left"></i></button>
-      <div class="commenthead">
-        <p>
-          <span>TESTIMONIALS</span>
-        </p>
-        <h1>What Customers Say?</h1>
-
-        <div class="totalsection" id="com">
-
-            <div class="commentbody">
-              <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                to
-                using 'Content here, content here', making it look like readable English. Many desktop publishing
-                packages
-                and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum</p>
-              <div class="commentname">
-                <h4>
-                  <pan><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star-half-stroke"></i></pan> - ALexander Vasquez
-                </h4>
+        <div>
+          <div class="hc-page-link-container">
+            <a href="/Hotel-BookingManagement/index.html" class="hc-pcl-links active">Home</a>
+            <a href="rooms.html" class="hc-pcl-links">Rooms</a>
+            <a href="aboutUs.html" class="hc-pcl-links">About Us</a>
+            <div class="hc-pcl-dropdown-container">
+              <p class="hc-pcl-dc-txt">Pages</p>
+              <div class="hc-pcl-dropdown-content">
+                <a href="rooms-detail.html" class="hc-pcl-dc-link">Rooms Details</a>
+                <a href="blog-detail.html" class="hc-pcl-dc-link">Blog Details</a>
               </div>
             </div>
+            <a href="news.html" class="hc-pcl-links">News</a>
+            <a href="contact.html" class="hc-pcl-links">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="commentbody">
-              <p >The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution of letters, as opposed to
-                using 'Content here, content here', making it look like readable English. Many desktop publishing
-                packages
-                and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum</p>
-              <div class="commentname">
-                <h4>
-                  <pan><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star-half-stroke"></i></pan> - ALexander Vasquez
-                </h4>
+    <!-- mble nav bar -->
+    <div class="container mble-header">
+      <div class="header-container-mble">
+        <div>
+          <a href="/Hotel-BookingManagement/index.html" class="hc-company-txt">Sona</a>
+        </div>
+        <div class="hc-menu-btn">
+          <button class="menu-icon"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div class="hc-sidebar">
+        <div class="hcs-icon-container">
+          <button class="cross-icon"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="hcs-links-container">
+          <div class="mble-booking-btn-container">
+            <a href="/" class="mble-booking-btn">Booking Now</a>
+          </div>
+          <div class="hcs-links">
+            <a href="/Hotel-BookingManagement/index.html" class="mble-links active">Home</a>
+            <a href="rooms.html" class="mble-links">Rooms</a>
+            <a href="aboutUs.html" class="mble-links">About Us</a>
+            <div class="mble-dropdown">
+              <button class="mble-dd-btn">Pages <i class="fa-solid fa-angle-down"></i></button>
+              <div id="my-drpdwn" class="mble-dropdown-content">
+                <a href="rooms-detail.html" class="mble-links">Room Details</a>
+                <a href="blog-detail.html" class="mble-links">Blog Details</a>
               </div>
             </div>
-
-
-            <div class="commentbody">
-              <p >The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution of letters, as opposed to
-                using 'Content here, content here', making it look like readable English. Many desktop publishing
-                packages
-                and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum</p>
-              <div class="commentname">
-                <h4>
-                  <pan><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                      class="fa-solid fa-star-half-stroke"></i></pan> - ALexander Vasquez
-                </h4>
+            <a href="news.html" class="mble-links">News</a>
+            <a href="contact.html" class="mble-links">Contact</a>
+          </div>
+          <div class="ucc-social-mble">
+            <div class="uccs-mail">
+              <span class="mail-icon"><i class="fa-solid fa-envelope"></i></span>
+              <p>info.colorlib@gmail.com</p>
+            </div>
+            <div class="uccs-social-links">
+              <a href="/Hotel-BookingManagement/index.html" class="uccs-sl-icons"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="/Hotel-BookingManagement/index.html" class="uccs-sl-icons"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="/Hotel-BookingManagement/index.html" class="uccs-sl-icons"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- Hero Section start -->
+    <section>
+      <div class="home-banner">
+        <div class="hb-text-container container">
+          <div>
+            <div class="hb-left-text">
+              <h1 class="head-text-1">Sona A Luxury Hotel</h1>
+              <p class="para-text-1">Here are the best hotel booking sites, including recommendations for international
+                travel and for finding low-priced hotel rooms.</p>
+              <div class="hb-cta-btn">
+                <a href="#">Discover Now</a>
               </div>
             </div>
+          </div>
+          <div>
+            <div class="hb-right-form">
+              <h2>Booking Your Hotel</h2>
+              <form id="bookingForm">
+                <div class="checkin-feild-container">
+                  <label for="check-in" class="form-label-text">Check In:</label>
+                  <div class="checkin-feild">
+                    <input type="date" name="check-in" id="check-in" placeholder="YYYY-MM-DD" required>
+                  </div>
+                </div>
+                <div class="checkout-feild-container">
+                  <label for="check-Out" class="form-label-text">Check Out:</label>
+                  <div class="checkout-feild">
+                    <input type="date" name="check-Out" id="check-out" placeholder="YYYY-MM-DD" required>
+                  </div>
+                </div>
+                <div class="dropdown-feild-container">
+                  <label for="guests" class="form-label-text">Guests:</label>
+                  <div class="dropdown-feild">
+                    <select name="guests" id="guests">
+                      <option value="2Adults">2 Adults</option>
+                      <option value="3Adults">3 Adults</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="dropdown-feild-container">
+                  <label for="rooms" class="form-label-text">Rooms:</label>
+                  <div class="dropdown-feild">
+                    <select name="rooms" id="rooms">
+                      <option value="1room">1 Room</option>
+                      <option value="2room">2 Room</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="hb-form-btn">
+                  <button type="submit">Check Availability</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
 
+    <!-- About us start -->
+    <section>
+      <div class="container">
+        <div class="about-us-conatiner">
+          <div class="abt-us-left">
+            <div class="abt-us-l-text-container">
+              <span>About Us</span>
+              <h2>Intercontinental LA Westlake Hotel</h2>
+              <p>Sona.com is a leading online accommodation site. We’re passionate about travel. Every day, we inspire
+                and reach millions of travelers across 90 local websites in 41 languages.</p>
+              <p>So when it comes to booking the perfect hotel, vacation rental, resort, apartment, guest house, or tree
+                house, we’ve got you covered.</p>
+              <div class="abt-us-read-more-btn">
+                <a href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="abt-us-right">
+            <div class="abt-us-r-image">
+              <img src="./assets/webp/about-1.webp" alt="Home page about image" width="275" height="390"
+                class="img-fluid">
+              <img src="./assets/webp/about-2.webp" alt="Home page about image" width="275" height="390"
+                class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About us end -->
 
+    <!-- What we Do start -->
+    <section>
+      <div class="container">
+        <div class="what-we-do-container">
+          <div class="wwd-head-txt">
+            <span>What We Do</span>
+            <h3>Discover Our Services</h3>
+          </div>
+          <div class="wwd-body-container">
+            <div>
+              <div class="www-body-text">
+                <span class="wwd-body-icon"><i class="fa-solid fa-location-dot"></i></span>
+                <h4>Travel Plan</h4>
+                <p class="wwd-bt-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna.</p>
+              </div>
+            </div>
+            <div>
+              <div class="www-body-text">
+                <span class="wwd-body-icon"><i class="fa-solid fa-bowl-rice"></i></span>
+                <h4>Catering Service</h4>
+                <p class="wwd-bt-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna.</p>
+              </div>
+            </div>
+            <div>
+              <div class="www-body-text">
+                <span class="wwd-body-icon"><i class="fa-solid fa-baby-carriage"></i></span>
+                <h4>Babysitting</h4>
+                <p class="wwd-bt-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna.</p>
+              </div>
+            </div>
+            <div>
+              <div class="www-body-text">
+                <span class="wwd-body-icon"><i class="fa-solid fa-shirt"></i></span>
+                <h4>Laundry</h4>
+                <p class="wwd-bt-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna.</p>
+              </div>
+            </div>
+            <div>
+              <div class="www-body-text">
+                <span class="wwd-body-icon"><i class="fa-solid fa-taxi"></i></span>
+                <h4>Hire Driver</h4>
+                <p class="wwd-bt-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna.</p>
+              </div>
+            </div>
+            <div>
+              <div class="www-body-text">
+                <span class="wwd-body-icon"><i class="fa-solid fa-martini-glass-citrus"></i></span>
+                <h4>Bar & Drink</h4>
+                <p class="wwd-bt-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <button onclick="slide('next')" type="button"><i class="fa-solid fa-arrow-right"></i></button>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="blogevents">
-      <div class="newcontet">
-        <p>Hotel News<br><span>Our Blog & Events</span></p>
-      </div>
-      <div class="blogimage1">
-        <div class="bimg1">
-          <img src="./assets/blog-1.jpg" alt="" class="img">
-          <div class="bimg1cont">
-            <p><span>Travel Trip</span></p>
-            <h2>Tremblant In Canada</h2>
-            <p><i class="fa-regular fa-clock"></i> 15Th April,2019</p>
-          </div>
-        </div>
-        <div class="bimg1">
-          <img src="./assets/blog-2.jpg" alt="" class="img">
-          <div class="bimg1cont">
-            <p><span>Travel Trip</span></p>
-            <h2>A Static Caravan</h2>
-            <p><i class="fa-regular fa-clock"></i> 15Th April,2019</p>
-          </div>
-        </div>
-        <div class="bimg1">
-          <img src="./assets/blog-3.jpg" alt="" class="img">
-          <div class="bimg1cont">
-            <p><span>Travel Trip</span></p>
-            <h2>Copper Canyon</h2>
-            <p><i class="fa-regular fa-clock"></i> 21Th April,2019</p>
-          </div>
-        </div>
-      </div>
-      <div class="blogimage2">
-        <div class="bimg2">
-          <img src="./assets/blog-wide.jpg" alt="" class="img1">
-          <div class="bimg2cont">
-            <p><span>Event</span></p>
-            <h2>Trip To Iqaluit In Nunavut A Canadian Arctic City</h2>
-            <p><i class="fa-regular fa-clock"></i> 08Th April,2019</p>
-          </div>
-        </div>
-        <div class="bimg3">
-          <img src="./assets/blog-10.jpg" alt="" class="img2">
-          <div class="bimg3cont">
-            <p><span>Travel Trip</span></p>
-            <h2>Traveling To Barcelona</h2>
-            <p><i class="fa-regular fa-clock"></i> 12Th April,2019</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="footersection">
-      <div class="footercont1">
-        <h3>Sona<span style="color:#e7a562 "> .</span></h3>
-        <p>We inspire and reach millions of travelers <br>across 90 local websites</p>
-        <div class="footicons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-solid fa-camera"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-youtube"></i>
-        </div>
-      </div>
-      <div class="footercont2">
-        <h3>CONTACT US</h3>
-        <p>(12) 345 67890</p>
-        <p>info.colorlib@gmail.com</p>
-        <p>856 Cordia Extension Apt. 356, Lake,</p>
-        <p>United State</p>
-      </div>
-      <div class="footercont3">
-        <h3>NEW LATEST</h3>
-        <p>Get the latest updates and offers.</p>
-        <input type="email" value="" placeholder="Email"><a href="#" type="button"><i
-            class="fa-brands fa-telegram"></i></a>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="endsection">
-      <div class="endcont1">
-        <p><a href="#">Contact</a></p>
-        <p><a href="#">Term of Policy</a></p>
-        <p><a href="#">Privacy</a></p>
-        <p><a href="#">Environmental Policy</a></p>
-      </div>
-      <div class="endcont2">
-        <p>Copyright@2024All right reserved</p>
-      </div>
-    </div>
-  </section>
+    </section>
+    <!-- What we Do end -->
 
+    <!-- Card text Hover start -->
+    <section>
+      <div class="card-hover-text-effect-container">
+        <div>
+          <div class="card-hover-parent">
+            <img src="./assets/webp/room-b1.webp" alt="Room Image" width="470" height="600" class="chp-image">
+            <div class="card-hover-child">
+              <div class="chc-head-txt">
+                <h3>Double Room</h3>
+                <p><span>199$</span>/Pernight</p>
+              </div>
+              <div class="chc-body-txt">
+                <p>Size:</p>
+                <p>30ft</p>
+                <p>Capacity:</p>
+                <p>Max Person 5</p>
+                <p>Bed:</p>
+                <p>King Beds</p>
+                <p>Service:</p>
+                <p>Wifi, Televison, Bathroom..</p>
+              </div>
+              <div>
+                <a href="rooms-detail.html" class="chc-footer-link">More Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card-hover-parent">
+            <img src="./assets/webp/room-b2.webp" alt="Room Image" width="470" height="600" class="chp-image">
+            <div class="card-hover-child">
+              <div class="chc-head-txt">
+                <h3>Premium King Room</h3>
+                <p><span>159$</span>/Pernight</p>
+              </div>
+              <div class="chc-body-txt">
+                <p>Size:</p>
+                <p>30ft</p>
+                <p>Capacity:</p>
+                <p>Max Person 5</p>
+                <p>Bed:</p>
+                <p>King Beds</p>
+                <p>Service:</p>
+                <p>Wifi, Televison, Bathroom..</p>
+              </div>
+              <div>
+                <a href="rooms-detail.html" class="chc-footer-link">More Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card-hover-parent">
+            <img src="./assets/webp/room-b3.webp" alt="Room Image" width="470" height="600" class="chp-image">
+            <div class="card-hover-child">
+              <div class="chc-head-txt">
+                <h3>Deluxe Room</h3>
+                <p><span>198$</span>/Pernight</p>
+              </div>
+              <div class="chc-body-txt">
+                <p>Size:</p>
+                <p>30ft</p>
+                <p>Capacity:</p>
+                <p>Max Person 5</p>
+                <p>Bed:</p>
+                <p>King Beds</p>
+                <p>Service:</p>
+                <p>Wifi, Televison, Bathroom..</p>
+              </div>
+              <div>
+                <a href="rooms-detail.html" class="chc-footer-link">More Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card-hover-parent">
+            <img src="./assets/webp/room-b4.webp" alt="Room Image" width="470" height="600" class="chp-image">
+            <div class="card-hover-child">
+              <div class="chc-head-txt">
+                <h3>Family Room</h3>
+                <p><span>299$</span>/Pernight</p>
+              </div>
+              <div class="chc-body-txt">
+                <p>Size:</p>
+                <p>30ft</p>
+                <p>Capacity:</p>
+                <p>Max Person 5</p>
+                <p>Bed:</p>
+                <p>King Beds</p>
+                <p>Service:</p>
+                <p>Wifi, Televison, Bathroom..</p>
+              </div>
+              <div>
+                <a href="rooms-detail.html" class="chc-footer-link">More Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Card text Hover end -->
+
+    <!-- Testimonial start -->
+    <section>
+      <div class="testi-bg">
+        <div class="container">
+          <div class="testi-head-txt">
+            <p>Testimonials</p>
+            <h1>What Customers Say?</h1>
+          </div>
+          <div class="testi-body-container">
+            <div>
+              <div class="tbc-text-container">
+                <div class="star-contaier">
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="tbc-tc-content">
+                  <p>After a construction project took longer than expected, my husband, my daughter and I
+                    needed a place to stay for a few nights. As a Chicago resident, we know a lot about our
+                    city, neighborhood and the types of housing options available and absolutely love our
+                    vacation at Sona Hotel.</p>
+                </div>
+                <div class="tbc-tc-author">
+                  <div>
+                    <img src="./assets/webp/testimonial-logo.webp" alt="testimonial-logo" width="34" height="34"
+                      class="img-fluid">
+                  </div>
+                  <p>Alexander Vaspuez</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="tbc-text-container">
+                <div class="star-contaier">
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="tbc-tc-content">
+                  <p>After a construction project took longer than expected, my husband, my daughter and I
+                    needed a place to stay for a few nights. As a Chicago resident, we know a lot about our
+                    city, neighborhood and the types of housing options available and absolutely love our
+                    vacation at Sona Hotel.</p>
+                </div>
+                <div class="tbc-tc-author">
+                  <div>
+                    <img src="./assets/webp/testimonial-logo.webp" alt="testimonial-logo" width="34" height="34"
+                      class="img-fluid">
+                  </div>
+                  <p>Alexander Vaspuez</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="tbc-text-container">
+                <div class="star-contaier">
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                  <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="tbc-tc-content">
+                  <p>After a construction project took longer than expected, my husband, my daughter and I
+                    needed a place to stay for a few nights. As a Chicago resident, we know a lot about our
+                    city, neighborhood and the types of housing options available and absolutely love our
+                    vacation at Sona Hotel.</p>
+                </div>
+                <div class="tbc-tc-author">
+                  <div>
+                    <img src="./assets/webp/testimonial-logo.webp" alt="testimonial-logo" width="34" height="34"
+                      class="img-fluid">
+                  </div>
+                  <p>Alexander Vaspuez</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial end -->
+
+    <!-- Blogs start -->
+    <section>
+      <div class="container">
+        <div class="blog-event-container">
+          <div class="be-c-head-txt">
+            <h1>Our Blog & Event</h1>
+          </div>
+          <div class="be-c-event-list-parent">
+            <div class="blg-evt-child-1">
+              <div class="blg-content">
+                <img src="./assets/webp/blog-1.webp" alt="Blog Image" width="370" height="450" class="img-fluid">
+                <div class="blg-txt">
+                  <span class="blg-tag">Travel Trip</span>
+                  <a href="/">Tremblant In Canada</a>
+                  <div class="blg-time">
+                    <span><i class="fa-regular fa-clock"></i></span>
+                    <p>15 th April, 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blg-evt-child-2">
+              <div class="blg-content">
+                <img src="./assets/webp/blog-2.webp" alt="Blog Image" width="370" height="450" class="blg-img">
+                <div class="blg-txt">
+                  <span class="blg-tag">Camping</span>
+                  <a href="/">Choosing a Static Caravan</a>
+                  <div class="blg-time">
+                    <span><i class="fa-regular fa-clock"></i></span>
+                    <p>15 th April, 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blg-evt-child-3">
+              <div class="blg-content">
+                <img src="./assets/webp/blog-3.webp" alt="Blog Image" width="370" height="450" class="blg-img">
+                <div class="blg-txt">
+                  <span class="blg-tag">Event</span>
+                  <a href="/">Copper Canyon</a>
+                  <div class="blg-time">
+                    <span><i class="fa-regular fa-clock"></i></span>
+                    <p>15 th April, 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blg-evt-child-4">
+              <div class="blg-content">
+                <img src="./assets/webp/blog-wide.webp" alt="Blog Image" width="770" height="450" class="blg-img">
+                <div class="blg-txt">
+                  <span class="blg-tag">Event</span>
+                  <a href="/">Trip To Iqaluit In Nunavut A Canadian Arctic City</a>
+                  <div class="blg-time">
+                    <span><i class="fa-regular fa-clock"></i></span>
+                    <p>15 th April, 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blg-evt-child-5">
+              <div class="blg-content">
+                <img src="./assets/webp/blog-10.webp" alt="Blog Image" width="370" height="450" class="blg-img">
+                <div class="blg-txt">
+                  <span class="blg-tag">Travel</span>
+                  <a href="/">Traveling To Barcelona</a>
+                  <div class="blg-time">
+                    <span><i class="fa-regular fa-clock"></i></span>
+                    <p>15 th April, 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blogs end -->
+
+  </main>
+  <footer>
+    <div class="footer-bg-1">
+      <div class="container">
+        <div class="footer-parent-container">
+          <div>
+            <div class="footer-child-1">
+              <a href="/" class="fpc-company-txt">Sona</a>
+              <p>We inspire and reach millions of travelers across 90 local websites</p>
+              <div class="footer-scl-container">
+                <a href="/Hotel-BookingManagement/index.html" class="footer-scl-icons-f"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="/Hotel-BookingManagement/index.html" class="footer-scl-icons-t"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="/Hotel-BookingManagement/index.html" class="footer-scl-icons-i"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="footer-child-2">
+              <p class="footer-head-txt">Contact Us</p>
+              <div class="footer-add">
+                <p>(12) 345 67890</p>
+                <p>info.colorlib@gmail.com</p>
+                <p>856 Cordia Extension Apt. 356, Lake,</p>
+                <p>United State</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="footer-child-3">
+              <strong class="footer-head-txt">New latest</strong>
+              <p>Get the latest updates and offers.</p>
+              <form id="footer-nl">
+                <div class="footer-news-letter">
+                  <input type="email" placeholder="Enter your Email" name="email" id="email" class="footer-l-input" required>
+                  <button class="footer-nl-btn" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bg-2">
+      <div class="container">
+        <div class="footer-link-container">
+          <div>
+            <div class="footer-links">
+              <a href="/">Contact</a>
+              <a href="/">Terms of use</a>
+              <a href="/">Privacy</a>
+              <a href="/">Enviromental Policy</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-owner-txt">
+              <p>Copyright <i class="fa-regular fa-copyright"></i> 2026 All right reserved | This template made with <i class="fa-solid fa-heart"></i> <a href="https://themewagon.github.io/sona/index.html">themewagon</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="toast" class="toaster-conatiner"></div>
+  </footer>
 </body>
 
 </html>
