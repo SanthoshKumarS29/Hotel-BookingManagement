@@ -96,7 +96,7 @@ function renderRoom() {
 
     card.innerHTML = `
       <div>
-        <img src="${room.img}" alt="${room.title}" width="550" height="550" class="img-fluid">
+        <img src="${room.img}" alt="${room.title}" width="550" height="550" class="img-fluid" loading="lazy">
       </div>
       <div class="rcc-body-txt">
         <h2 class="rc-text-1">${room.title}</h2>
